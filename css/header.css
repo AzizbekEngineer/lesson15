@@ -1,0 +1,145 @@
+header {
+  background-color: black;
+}
+
+.light header , .light #navbar{
+  background-color: white;
+}
+
+.light #navbar *{
+  color: black !important;
+}
+
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+}
+
+.nav__container {
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.nav__list {
+  display: flex;
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar-shrink {
+  box-shadow: 0px 2px 5px gray;
+}
+
+.nav__list,
+.nav__btns {
+  gap: 30px;
+}
+
+.nav__item {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.nav__item:hover{
+  color: #FAC422;;
+}
+
+#mode-btn {
+  background-color: transparent;
+}
+
+.contact__btn {
+  border: 1px solid #fff;
+  padding: 14px 28px;
+  background-color: var(--primaryColor);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contact__btn:hover {
+  color: var(--primaryColor);
+  background-color: white;
+}
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .menu__btn {
+    display: block;
+  }
+  .nav__list {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    background-color: rgb(26, 25, 25);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav__humburger--btn {
+    display: block;
+  }
+}
+
+.show-nav__list {
+  left: 0;
+}
+
+@media (max-width: 530px) {
+  .contact__btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 510px) {
+  .nav__logo {
+    max-width: 120px;
+    max-height: 70px;
+  }
+  .nav__logo img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact__btn {
+    padding: 4px 12px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .menu__btn {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .menu__btn img {
+    width: 100%;
+  }
+  .nav__list,
+  .nav__btns {
+    gap: 15px;
+  }
+  .nav__container {
+    gap: 15px;
+  }
+}
